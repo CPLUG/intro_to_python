@@ -28,4 +28,19 @@ if 2 in next_list:
     print("2 is here!")
 else:
     print("No 2 :(")
-    
+
+# Did you know lists can contain *any* data type?
+next_list.insert(0, "test")
+next_list.append(12)
+next_list.append(25)
+next_list.append(-4)
+next_list.append([2, 5])
+
+## Slicing syntax: [start:stop:step]. Note that stop is exclusive -- the element
+# at that index is not included
+print("\nRemember our dear list {}?\n".format(next_list))
+print("List, but no first element: {}".format(next_list[1:]))
+print("List, but no last element: {}".format(next_list[:len(next_list)-1]))
+print("List, some middle elements: {}".format(next_list[2:6]))
+print("List, but every other element: {}".format(next_list[::2]))
+print("List, but reversed: {}".format(next_list[::-1]))
